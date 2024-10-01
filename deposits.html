@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Deposits</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MyBank</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-section">
+        <div class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="loans.html">Loans</a></li>
+                <li><a href="deposits.html">Fixed Deposits</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>Create Fixed Deposit</h2>
+            <form id="deposit-form" class="form-right">
+                <div class="form-group">
+                    <label for="deposit-amount">Deposit Amount</label>
+                    <input type="number" id="deposit-amount" placeholder="Enter deposit amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="term">Term (in months)</label>
+                    <input type="number" id="term" placeholder="Enter term in months" required>
+                </div>
+                <button type="submit" class="btn primary-btn">Create Deposit</button>
+            </form>
+
+            <h2>Active Fixed Deposits</h2>
+            <div class="transaction-table">
+                <table class="table" id="deposits-table">
+                    <thead>
+                        <tr>
+                            <th>Deposit Amount</th>
+                            <th>Interest Rate</th>
+                            <th>Maturity Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Deposits will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

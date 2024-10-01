@@ -1,0 +1,732 @@
+/* ==================== Global Styles ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* ==================== Header ==================== */
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-left: 20px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ==================== Hero Section (Index Page) ==================== */
+.index-page .hero-section {
+    background: url('/images/image_bg.png') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.index-page .hero-section h1 {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.index-page .hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.index-page .btn {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.index-page .primary-btn {
+    background-color: #ff4757;
+    color: white;
+    margin-right: 15px;
+}
+
+.index-page .primary-btn:hover {
+    background-color: #e84141;
+}
+
+.index-page .secondary-btn {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.index-page .secondary-btn:hover {
+    background-color: #187bcd;
+}
+
+/* ==================== Services Section (Index Page) ==================== */
+.services-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* ==================== Footer ==================== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* ==================== Form Section (Login & Signup Pages) ==================== */
+.form-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #187bcd;
+}
+
+.form-container p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.form-container a {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0044cc;
+    font-weight: bold;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}
+
+/* ==================== Dashboard Section ==================== */
+.dashboard-section {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Sidebar Styling (Global for Dashboard, Loans, and Transactions) */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Main Content (Dashboard, Loans, and Transactions) */
+.main-content {
+    padding: 40px;
+    margin-left: 260px; /* Adjust for the sidebar width */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 260px); /* Adjust the width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dashboard Specific Styling */
+.main-content h1 {
+    color: #0044cc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p, .card ul {
+    font-size: 1em;
+    color: #555;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
+/* ==================== Loans Page Form Styling ==================== */
+.form-right {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; /* Centered alignment */
+}
+
+.form-right .btn {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #187bcd;
+}
+
+/* Adjust Form Styling */
+.form-right {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; /* Centered alignment */
+    text-align: left; /* Ensure form content is left-aligned */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-right .btn {
+    display: block;
+    margin: 20px auto 0; /* Center the button */
+    padding: 12px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    width: fit-content; /* Button width adapts to content */
+    text-align: center; /* Center the button text */
+}
+
+.primary-btn {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #187bcd;
+}
+
+/* Ensure the input fields don't break out of the form */
+.form-group input[type="number"] {
+    appearance: textfield; /* For Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* For Chrome, Safari, Edge, Opera */
+    margin: 0;
+}
+
+
+
+/* ==================== Table Styling (Dashboard, Loans, Transactions) ==================== */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #fff;
+}
+
+/* ==================== Responsive Adjustments ==================== */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .form-right {
+        width: 100%;
+    }
+}
+
+
+/* General adjustments for the form and table */
+.main-content {
+    padding: 40px;
+    margin-left: 260px; /* Adjust for the sidebar width */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+h2 {
+    color: #0044cc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+#support-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#support-form .btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+}
+
+#support-form .btn:hover {
+    background-color: #187bcd;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table th, 
+table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #fff;
+}
+
+
+
+/* General adjustments for main content */
+.main-content {
+    padding: 40px;
+    margin-left: 260px; /* Adjust for the sidebar width */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+h2 {
+    color: #0044cc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+
+/* Form Styling for the Fixed Deposit Form */
+.form-right {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styling */
+.form-right .btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+}
+
+.form-right .btn:hover {
+    background-color: #187bcd;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.table th, 
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #fff;
+}
+
+/* Sidebar Styles with Hover Effect */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
